@@ -20,7 +20,7 @@ function renderBooks() {
     <i class="fas fa-star-half-alt"></i>
   </div>
   <div class="book__price">
-    <span =>$${book.originalPrice.toFixed(2)}</span>  
+    <span>$${book.originalPrice.toFixed(2)}</span>  
   </div>
 </div>`;
   })
@@ -32,6 +32,8 @@ function renderBooks() {
   // booksWrapper.innerHTML = 
   // ;
 }
+
+function filterBooks()
 
 setTimeout(() => {
 renderBooks();
