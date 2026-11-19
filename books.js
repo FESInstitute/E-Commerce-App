@@ -1,4 +1,4 @@
-function renderBooks() {
+function renderBooks(filter) {
   const booksWrapper = document.querySelector('.books');
 
   const books = getBooks();
@@ -26,14 +26,14 @@ function renderBooks() {
   })
   .join("");
 
-  console.log(booksHtml);
-
   booksWrapper.innerHTML = booksHtml;
-  // booksWrapper.innerHTML = 
-  // ;
 }
 
-function filterBooks()
+function filterBooks(event) {
+  if (event.target.value === 'LOW_TO_HIGH') {
+  }
+  console.log(event.target.value)
+}
 
 setTimeout(() => {
 renderBooks();
